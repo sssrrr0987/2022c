@@ -112,3 +112,61 @@ int main()
     if("a==0") printf("不管什麼東西,幾乎都成立\n");
 }
 ```
+
+# Week07
+## step01-0_
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a=1234567812345678;///裝32位元
+    printf("%d\n",a);
+    ///最大只能裝9-10位數
+    long long int b=1234567812345678;///裝64位元
+    printf("%lld\n",b);
+    ///最大只能裝18-19位數
+}
+```
+##
+```cpp
+#include <stdio.h>
+int main()
+{
+    long long int a,b,ans;
+    scanf("%lld %lld",&a,&b);
+    for(long long int i=1;i<=a;i++){
+        if(a%i==0 && b%i==0) ans=i;
+    }
+    printf("答案是:%lld\n",ans);
+}
+```
+##
+```cpp
+#include <stdio.h>
+int main()
+{
+    long long int a,b,c;
+    scanf("%lld %lld",&a,&b);
+    while(1){
+        c=a%b;
+        printf("%lld %lld %lld\n",a,b,c);
+        if(c==0) break;
+        a=b;
+        b=c;
+    }
+
+    printf("答案是:%lld\n",b);
+}
+```
+##
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n=1234;
+    while(n>0){
+        printf("個位數是%d\n",n%10);
+        n=n/10;
+    }
+}
+```
