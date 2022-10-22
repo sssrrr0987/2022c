@@ -114,7 +114,8 @@ int main()
 ```
 
 # Week07
-## step01-0_
+## step02-1_介紹long long int跟int差別
+有了long long int 那我們便能回來複習最大公因數了。數字範圍再大一點, 結果要算好久。讀寫資料時要用%lld 是小寫的LLD,不是數字11d哦
 ```cpp
 #include <stdio.h>
 int main()
@@ -127,7 +128,8 @@ int main()
     ///最大只能裝18-19位數
 }
 ```
-##
+## step02-2_用long long int來尋找两數最大公因數
+(暴力法)
 ```cpp
 #include <stdio.h>
 int main()
@@ -140,7 +142,8 @@ int main()
     printf("答案是:%lld\n",ans);
 }
 ```
-##
+## step02-3_用long long int改寫輾轉相除法
+因為前面的暴力法真的很慢,所以我們要改用輾轉相除法。上週做過, 今天再用 long long int 很長很長的整數 再做一次。口訣是 老大a, 老二b 可以算出 老三c=a%b, 如果老三c是0, 老二b就是答案。輾轉的意是,是老二變老大, 老三變老二, 利用while(1)持續去做。
 ```cpp
 #include <stdio.h>
 int main()
@@ -158,7 +161,8 @@ int main()
     printf("答案是:%lld\n",b);
 }
 ```
-##
+## step03-1_剝皮法 
+今天為了教剝皮法, 老師先介紹資工系阿平老師出的題目,把數字3位一逗號。再介紹十進位的每一位數取出來,再介紹利用while(迴圈)的方法, 最後還有示範十進位轉二進位。
 ```cpp
 #include <stdio.h>
 int main()
