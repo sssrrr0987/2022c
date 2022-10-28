@@ -174,3 +174,72 @@ int main()
     }
 }
 ```
+# Week08
+## 
+```cpp
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		for(int k=1;k<=n;k++){
+			if(k<=n-i) printf(" ");
+			else printf("*");
+		}
+		printf("\n");
+	}
+}
+```
+##
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int i=1;
+    while(i<=n){
+        int k=1;
+        while(k<=n){
+            if(k<=n-i) printf(" ");
+            else printf("*");
+            k++;
+        }
+        printf("\n");
+        i++;
+    }
+}
+```
+## 
+```cpp
+#include <stdio.h>
+int  main()
+{
+    printf("要判斷你輸入的數字是不是很孤獨的數");
+    int n;
+    scanf("%d",&n);
+    int bad=0;
+    for(int i=2;i<n;i++){
+        if(n%i==0) bad=1;
+    }
+    if(bad==0) printf("%d 是質數(沒有壞掉)",n);
+    else printf("%d 不是質數(早就壞掉了)",n);
+}
+```
+##
+```cpp
+#include <stdio.h>
+int main()
+{
+	int a;
+	scanf("%d",&a);
+	for(int n=2;n<=a;n++){
+		int bad=0;
+		for(int i=2;i<n;i++){
+			if(n%i==0) bad=1;
+		}
+		if(bad==0) printf("%d ",n);
+	}
+}
+```
