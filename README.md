@@ -248,6 +248,8 @@ int main()
 }
 ```
 # Week10
+## step01-1_陣列array
+照著課本練習陣列宣告、陣列宣告順便給值、把值拿出來用
 ```cpp
 #include <stdio.h>
 int main()
@@ -259,6 +261,8 @@ int main()
     printf("a[3]:%d\n",a[3]);
 }
 ```
+## step02-1_for迴圈 + 陣列
+陣列很有用, 像找質數時, 可以用篩子法快速把全部質數找出來。不過程式一開始不要教太難, 我們先用 , 讓大家熟悉陣列的 [i] 方括號裡面是怎麼放的、怎麼正著印、倒著印
 ```cpp
 #include <stdio.h>
 int main()
