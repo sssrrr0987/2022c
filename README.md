@@ -404,3 +404,32 @@ int main()
 }
 
 ```
+#include <stdio.h>
+int main()
+{
+	int a[10][10],b[10][10],c[10][10],n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		for(int k=0;k<n;k++){
+			scanf("%d",&a[i][k]);
+		}
+	}
+	for(int i=0;i<n;i++){
+		for(int k=0;k<n;k++){
+			scanf("%d",&b[i][k]);
+		}
+	}
+	for(int i=0;i<n;i++){
+		for(int k=0;k<n;k++){
+			for(int l=0;l<n;l++){
+                c[i][k]=c[i][k]+a[i][i+l]*b[i+l][k];
+			}
+		}
+	}
+	for(int i=0;i<n;i++){
+		for(int k=0;k<n;k++){
+			printf("%d ",&c[i][k]);
+		}
+		printf("\n");
+	}
+}
